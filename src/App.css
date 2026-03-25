@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+body {
+  /* Make sure the path matches where your file is! */
+  background-image: url(./assets/background.gif);
+  
+  /* This keeps the image "stuck" to the screen so it doesn't scroll away */
+  background-attachment: fixed;
+  
+  /* This covers the whole screen */
+  background-size: cover;
+  
+  /* This centers the image */
+  background-position: center;
+  
+  /* No repeating */
+  background-repeat: no-repeat;
+  
+  /* Use min-height instead of height so it can grow if needed */
+  min-height: 100vh;
+  
+  /* Reset margins */
+  margin: 0;
+}
