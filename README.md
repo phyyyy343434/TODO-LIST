@@ -1,16 +1,74 @@
-# React + Vite
+# Todo List Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, interactive todo list application built with React and Vite, featuring drag-and-drop functionality and a clean user interface.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Create and manage todo items
+- Drag-and-drop task organization
+- Responsive design with Tailwind CSS
+- Fast development experience with Vite
+- Modern React 19 implementation
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 19** - UI library
+- **Vite** - Build tool and dev server
+- **Tailwind CSS** - Utility-first styling
+- **@hello-pangea/dnd** - Drag and drop functionality
+- **React Router** - Navigation
+- **React Icons** - Icon library
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone <repository-url>
+cd todo-list
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Start the development server
+```bash
+npm run dev
+```
+
+4. Open your browser and navigate to `http://localhost:5173`
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## Project Structure
+
+```
+src/
+├── Component/
+│   └── HomePage/
+│       ├── GroupHome.jsx    # Main container component
+│       ├── Home.jsx          # Home view
+│       ├── Place.jsx         # Task placement component
+│       └── SideBar.jsx       # Navigation sidebar
+├── assets/                   # Static assets
+├── App.jsx                   # Root component
+├── main.jsx                  # Application entry point
+└── index.css                 # Global styles
+```
+
+## License
+
+This project is private and not licensed for public use.
